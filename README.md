@@ -10,6 +10,7 @@ Ensure that the necessary Kafka Connect connectors are available, such as the Sn
 Configure the Snowflake Source Connector:
 
 Define a Snowflake source connector configuration file, let's call it snowflake-source-config.properties, with the necessary properties for connecting to Snowflake and extracting data.
+
 Configure the source connector with the Snowflake JDBC driver, Snowflake connection details, SQL query or table name for data extraction, and other relevant settings.
 Example configuration properties for the Snowflake source connector:
 ```
