@@ -1,0 +1,9 @@
+name=mongodb-sink-connector
+connector.class=org.apache.kafka.connect.mongodb.MongoDbSinkConnector
+tasks.max=1
+topics=snowflake_data
+connection.uri=mongodb://<username>:<password>@<mongodb-host>:<mongodb-port>/<database>
+key.converter=org.apache.kafka.connect.storage.StringConverter
+value.converter=org.apache.kafka.connect.json.JsonConverter
+value.converter.schemas.enable=false
+mongodb.collection=<target-collection>
