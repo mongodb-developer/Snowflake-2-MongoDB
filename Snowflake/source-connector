@@ -1,0 +1,12 @@
+name=snowflake-source-connector
+connector.class=snowflake.kafka.connector.SnowflakeSourceConnector
+tasks.max=1
+snowflake.topic.prefix=snowflake_data
+snowflake.url=jdbc:snowflake://<snowflake-host>:<snowflake-port>/<snowflake-db>?warehouse=<warehouse>&db=<db>&schema=<schema>
+snowflake.user=<username>
+snowflake.private.key.path=/path/to/private/key.pem
+snowflake.private.key.passphrase=<private-key-passphrase>
+query=<snowflake-sql-query>
+# Alternatively, use table names for data extraction
+mode=timestamp
+timestamp.column.name=<timestamp-column-name>
