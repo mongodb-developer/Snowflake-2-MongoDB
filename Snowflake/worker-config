@@ -1,0 +1,10 @@
+bootstrap.servers=localhost:9092
+key.converter=org.apache.kafka.connect.storage.StringConverter
+value.converter=org.apache.kafka.connect.json.JsonConverter
+value.converter.schemas.enable=false
+offset.storage.topic=my_connect_offsets
+offset.storage.replication.factor=1
+config.storage.topic=my_connect_configs
+config.storage.replication.factor=1
+status.storage.topic=my_connect_statuses
+status.storage.replication.factor=1
