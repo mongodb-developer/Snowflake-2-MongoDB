@@ -3,7 +3,7 @@ Sample Kafka Configuration to move data from Snowflake to MongoDB
 
 #Moving Data from Snowflake to MongoDB using Kafka Connect
 
-Set up a Kafka Connect cluster:
+Set up a Kafka Connect cluster:https://docs.snowflake.com/en/user-guide/kafka-connector-install
 
 Install and configure Apache Kafka and Kafka Connect.
 Ensure that the necessary Kafka Connect connectors are available, such as the Snowflake Connector and MongoDB Connector.
